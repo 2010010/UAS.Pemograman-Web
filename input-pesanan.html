@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input Pemesanan</title>
+</head>
+
+<body>
+   <h1>**Pemesanan Tiket Maskapai**</h1>
+   =====================================
+   <form id="frm1" action="output-pemesanan-tiket.html">
+   <table>
+   </tr>
+       <tr>
+           <td>Nama Pemesanan</td>
+           <td>:</td>
+           <td><input type="text" name="nama" required placeholder="Masukan Nama"</td>
+       </tr>
+       <tr>
+           <td>Jumlah Pesanan</td>
+           <td>:</td>
+           <td><<input type="number" name="Jumlah Pesanan" required placeholder="Masukan Jumlah"/td>
+       </tr>
+       <tr>
+            <td>Kelas</td>
+            <td>:</td>
+            <td><input type="radio" name="kelas" value="ekonomi" cheked required>ekonomi <input type="radio" name="kelas" value="bisnis" cheked required>bisnis<input type="radio" name="kelas" value="eksekutif" cheked required>eksekutif</td>
+       </tr>
+       <tr>
+           <td>Tujuan</td>
+           <td>:</td>
+           <td><select id="" name="Tujuan">
+               <option value="bali" id="bali">bali</option>
+               <option value="lombok" id="lombok">lombok</option>
+           </select></td>
+        </tr>
+        <tr>
+            <td>bagasi</td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="bagasi" value="5Kg"><label for="5kg">5Kg</label>
+                <input type="radio" name="bagasi" value="10Kg"><label for="10kg">10Kg</label>
+                <input type="radio" name="bagasi" value="15Kg"><label for="15kg">15Kg</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Asuransi</td>
+            <td>:</td>
+            <td>
+                <input type="checkbox" name="asuransi" value="asuransi jiwa">asuransi jiwa;
+                <input type="checkbox" name="asuransi" value="asuransi kecelakaan">asuransi kecelakaan;
+                <input type="checkbox" name="asuransi" value="asuransi keterlambatan">asuransi keterlambatan
+            </td>
+        </tr>
+   </table>
+        <br>
+        <br>
+        <input type="button" onclick="myFunction()" value="submit"><button>Batal</button>
+   </form>
+   
+   <scrip>
+      function myFunction() {
+          document.getElementByid("frm1").submit();
+      }
+   </scrip>
+
+</body>
+
+</html>
